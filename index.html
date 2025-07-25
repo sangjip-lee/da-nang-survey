@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -6,33 +6,33 @@
   <title>2025년 홈서비스연합회 1차 우수인력 다낭여행 설문조사</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f7f7f7;
+      font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
     }
 
     .container {
       max-width: 600px;
-      margin: 40px auto;
-      padding: 30px;
-      background-color: white;
+      margin: 30px auto;
+      padding: 30px 20px;
+      background-color: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
-      color: #880e4f;
+      color: #A50034;
+      font-size: 20px;
       text-align: center;
-      font-size: 24px;
-      margin-bottom: 30px;
       line-height: 1.5;
+      margin-bottom: 30px;
     }
 
     label {
-      display: block;
-      margin-top: 20px;
       font-weight: bold;
+      display: block;
+      margin: 20px 0 8px;
     }
 
     input[type="text"],
@@ -40,7 +40,6 @@
     select {
       width: 100%;
       padding: 10px;
-      margin-top: 8px;
       border: 1px solid #ccc;
       border-radius: 6px;
       font-size: 14px;
@@ -52,12 +51,17 @@
       height: 80px;
     }
 
+    .select-red option {
+      color: #A50034;
+      font-weight: bold;
+    }
+
     button {
       margin-top: 30px;
-      background-color: #b71c1c;
+      background-color: #A50034;
       color: white;
       border: none;
-      padding: 12px 20px;
+      padding: 14px 0;
       font-size: 16px;
       border-radius: 6px;
       width: 100%;
@@ -65,7 +69,18 @@
     }
 
     button:hover {
-      background-color: #880e4f;
+      background-color: #8a002c;
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        margin: 20px 10px;
+        padding: 20px 15px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
@@ -76,7 +91,7 @@
       1차 우수인력 다낭여행 설문조사
     </h1>
 
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfXXXXXXXXXXXXXXXXXXXXXXX/formResponse" method="POST" target="_self">
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfXXXXXXXXXXXXXXXXXXXX/formResponse" method="POST">
       <label for="name">성함</label>
       <input type="text" name="entry.0000000000" id="name" placeholder="이름을 입력해주세요." required>
 
@@ -84,23 +99,23 @@
       <input type="text" name="entry.1111111111" id="center" placeholder="예: 수원팔달센터" required>
 
       <label for="satisfaction1">여행 일정은 만족스러우셨나요?</label>
-      <select name="entry.2222222222" id="satisfaction1" required>
+      <select name="entry.2222222222" id="satisfaction1" class="select-red" required>
         <option value="">선택</option>
-        <option value="매우만족">매우만족</option>
-        <option value="만족">만족</option>
-        <option value="보통">보통</option>
-        <option value="불만족">불만족</option>
-        <option value="매우불만족">매우불만족</option>
+        <option value="★★★★★ 매우 만족">★★★★★ 매우 만족</option>
+        <option value="★★★★ 만족">★★★★ 만족</option>
+        <option value="★★★ 보통">★★★ 보통</option>
+        <option value="★★ 불만족">★★ 불만족</option>
+        <option value="★ 매우 불만족">★ 매우 불만족</option>
       </select>
 
       <label for="satisfaction2">숙소의 청결 상태 만족도는 어떠셨나요?</label>
-      <select name="entry.3333333333" id="satisfaction2" required>
+      <select name="entry.3333333333" id="satisfaction2" class="select-red" required>
         <option value="">선택</option>
-        <option value="매우만족">매우만족</option>
-        <option value="만족">만족</option>
-        <option value="보통">보통</option>
-        <option value="불만족">불만족</option>
-        <option value="매우불만족">매우불만족</option>
+        <option value="★★★★★ 매우 만족">★★★★★ 매우 만족</option>
+        <option value="★★★★ 만족">★★★★ 만족</option>
+        <option value="★★★ 보통">★★★ 보통</option>
+        <option value="★★ 불만족">★★ 불만족</option>
+        <option value="★ 매우 불만족">★ 매우 불만족</option>
       </select>
 
       <label for="highlight">여행 중 어떤 부분이 가장 좋으셨나요?</label>
