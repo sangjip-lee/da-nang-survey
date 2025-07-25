@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #f7f7f7;
       margin: 0;
       padding: 0;
     }
@@ -91,15 +91,19 @@
       1차 우수인력 다낭여행 설문조사
     </h1>
 
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfXXXXXXXXXXXXXXXXXXXX/formResponse" method="POST">
+    <form action="https://formsubmit.co/sjreck55@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="다낭 설문 응답 도착" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+
       <label for="name">성함</label>
-      <input type="text" name="entry.0000000000" id="name" placeholder="이름을 입력해주세요." required>
+      <input type="text" name="성함" id="name" placeholder="이름을 입력해주세요." required>
 
       <label for="center">센터명</label>
-      <input type="text" name="entry.1111111111" id="center" placeholder="예: 수원팔달센터" required>
+      <input type="text" name="센터명" id="center" placeholder="예: 수원팔달센터" required>
 
       <label for="satisfaction1">여행 일정은 만족스러우셨나요?</label>
-      <select name="entry.2222222222" id="satisfaction1" class="select-red" required>
+      <select name="일정 만족도" id="satisfaction1" class="select-red" required>
         <option value="">선택</option>
         <option value="★★★★★ 매우 만족">★★★★★ 매우 만족</option>
         <option value="★★★★ 만족">★★★★ 만족</option>
@@ -109,7 +113,7 @@
       </select>
 
       <label for="satisfaction2">숙소의 청결 상태 만족도는 어떠셨나요?</label>
-      <select name="entry.3333333333" id="satisfaction2" class="select-red" required>
+      <select name="숙소 만족도" id="satisfaction2" class="select-red" required>
         <option value="">선택</option>
         <option value="★★★★★ 매우 만족">★★★★★ 매우 만족</option>
         <option value="★★★★ 만족">★★★★ 만족</option>
@@ -119,13 +123,13 @@
       </select>
 
       <label for="highlight">여행 중 어떤 부분이 가장 좋으셨나요?</label>
-      <textarea name="entry.4444444444" id="highlight" placeholder="특히 좋았던 부분이 있다면 적어주세요."></textarea>
+      <textarea name="좋았던 부분" id="highlight" placeholder="특히 좋았던 부분이 있다면 적어주세요."></textarea>
 
       <label for="improve">여행 중 개선되었으면 하는 점은 무엇인가요?</label>
-      <textarea name="entry.5555555555" id="improve" placeholder="불편하거나 개선할 점이 있다면 알려주세요."></textarea>
+      <textarea name="개선점" id="improve" placeholder="불편하거나 개선할 점이 있다면 알려주세요."></textarea>
 
       <label for="opinion">자유 의견을 남겨주세요.</label>
-      <textarea name="entry.6666666666" id="opinion" placeholder="기타 남기실 말씀을 자유롭게 작성해주세요."></textarea>
+      <textarea name="자유 의견" id="opinion" placeholder="기타 남기실 말씀을 자유롭게 작성해주세요."></textarea>
 
       <button type="submit">제출하기</button>
     </form>
