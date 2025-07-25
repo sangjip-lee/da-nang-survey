@@ -2,98 +2,77 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>2025년 홈서비스연합회 1차 우수인력 다낭여행 설문조사</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025년 홈서비스연합회 다낭여행 설문조사</title>
   <style>
     body {
-      font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-      background-color: #f7f7f7;
+      background-color: #f2f2f2;
+      font-family: 'Malgun Gothic', sans-serif;
       margin: 0;
       padding: 0;
     }
     .container {
       max-width: 600px;
-      margin: 30px auto;
-      padding: 30px 20px;
+      margin: 50px auto;
       background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
-    h1 {
-      color: #A50034;
-      font-size: 20px;
+    h2 {
       text-align: center;
-      line-height: 1.5;
-      margin-bottom: 30px;
+      color: #A50034;
     }
     label {
-      font-weight: bold;
       display: block;
-      margin: 20px 0 8px;
+      margin: 15px 0 5px;
+      font-weight: bold;
     }
-    input[type="text"],
-    textarea,
-    select {
+    input[type="text"], select, textarea {
       width: 100%;
       padding: 10px;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
+      border-radius: 5px;
       box-sizing: border-box;
     }
-    textarea {
-      resize: vertical;
-      height: 80px;
+    select option {
+      padding: 5px;
     }
-    .select-red option {
-      color: #A50034;
-      font-weight: bold;
-    }
-    button {
-      margin-top: 30px;
-      background-color: #A50034;
-      color: white;
-      border: none;
-      padding: 14px 0;
-      font-size: 16px;
-      border-radius: 6px;
+    button[type="submit"] {
       width: 100%;
+      background-color: #A50034;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 5px;
       cursor: pointer;
+      margin-top: 20px;
     }
-    button:hover {
-      background-color: #8a002c;
+    button[type="submit"]:hover {
+      background-color: #87002b;
     }
-    @media screen and (max-width: 480px) {
-      .container {
-        margin: 20px 10px;
-        padding: 20px 15px;
-      }
-      h1 {
-        font-size: 18px;
-      }
+    .star {
+      color: #A50034;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>
-      2025년 홈서비스연합회<br/>
-      1차 우수인력 다낭여행 설문조사
-    </h1>
-
-   <form action="https://formsubmit.co/sjreck55@gmail.com" method="POST">
-  <input type="hidden" name="_next" value="thanks.html">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
+    <h2>2025년 홈서비스연합회<br>1차 우수인력 다낭여행 설문조사</h2>
+    <form action="https://formsubmit.co/sjreck55@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
 
       <label for="name">성함</label>
-      <input type="text" name="성함" id="name" placeholder="이름을 입력해주세요." required>
+      <input type="text" id="name" name="성함" placeholder="이름을 입력해주세요" required>
 
       <label for="center">센터명</label>
-      <input type="text" name="센터명" id="center" placeholder="예: 수원팔달센터" required>
+      <input type="text" id="center" name="센터명" placeholder="예: 수원팔달센터" required>
 
-      <label for="satisfaction1">여행 일정은 만족스러우셨나요?</label>
-      <select name="일정 만족도" id="satisfaction1" class="select-red" required>
+      <label for="q1">문항1. 여행 일정은 만족스러우셨나요?</label>
+      <select id="q1" name="여행 일정 만족도" required>
         <option value="">선택</option>
         <option value="★★★★★ 매우 만족">★★★★★ 매우 만족</option>
         <option value="★★★★ 만족">★★★★ 만족</option>
@@ -102,8 +81,8 @@
         <option value="★ 매우 불만족">★ 매우 불만족</option>
       </select>
 
-      <label for="satisfaction2">숙소의 청결 상태 만족도는 어떠셨나요?</label>
-      <select name="숙소 만족도" id="satisfaction2" class="select-red" required>
+      <label for="q2">문항2. 숙소의 청결 상태 만족도는 어떠셨나요?</label>
+      <select id="q2" name="숙소 청결 만족도" required>
         <option value="">선택</option>
         <option value="★★★★★ 매우 만족">★★★★★ 매우 만족</option>
         <option value="★★★★ 만족">★★★★ 만족</option>
@@ -112,14 +91,14 @@
         <option value="★ 매우 불만족">★ 매우 불만족</option>
       </select>
 
-      <label for="highlight">여행 중 어떤 부분이 가장 좋으셨나요?</label>
-      <textarea name="좋았던 부분" id="highlight" placeholder="특히 좋았던 부분이 있다면 적어주세요."></textarea>
+      <label for="q3">문항3. 여행 중 어떤 부분이 가장 좋으셨나요?</label>
+      <textarea id="q3" name="가장 좋았던 점" rows="3" placeholder="특별히 좋았던 부분이 있다면 적어주세요."></textarea>
 
-      <label for="improve">여행 중 개선되었으면 하는 점은 무엇인가요?</label>
-      <textarea name="개선점" id="improve" placeholder="불편하거나 개선할 점이 있다면 알려주세요."></textarea>
+      <label for="q4">문항4. 여행 중 개선되었으면 하는 점은?</label>
+      <textarea id="q4" name="개선되었으면 하는 점" rows="3" placeholder="불편하거나 개선할 점이 있다면 알려주세요."></textarea>
 
-      <label for="opinion">자유 의견을 남겨주세요.</label>
-      <textarea name="자유 의견" id="opinion" placeholder="기타 남기실 말씀을 자유롭게 작성해주세요."></textarea>
+      <label for="q5">문항5. 자유 의견을 남겨주세요. (예: 연합회에 바라는 점)</label>
+      <textarea id="q5" name="자유 의견" rows="3" placeholder="기타 남기실 말씀을 자유롭게 작성해주세요."></textarea>
 
       <button type="submit">제출하기</button>
     </form>
