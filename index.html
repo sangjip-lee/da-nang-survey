@@ -28,7 +28,7 @@
       margin: 15px 0 5px;
       font-weight: bold;
     }
-    select, textarea {
+    input[type="text"], select, textarea {
       width: 100%;
       padding: 10px;
       border: 1px solid #ccc;
@@ -81,14 +81,34 @@
         <option value="★ 매우 불만족">★ 매우 불만족</option>
       </select>
 
-      <label for="q3">문항3. 여행 중 어떤 부분이 가장 좋으셨나요?</label>
-      <textarea id="q3" name="가장 좋았던 점" rows="3" placeholder="특별히 좋았던 부분이 있다면 적어주세요."></textarea>
+      <label for="q3">문항3. 여행 중 식사(식당)의 만족도는 어떠셨나요?</label>
+      <select id="q3" name="식사 만족도" required>
+        <option value="">선택</option>
+        <option value="★★★★★ 매우 만족">★★★★★ 매우 만족</option>
+        <option value="★★★★ 만족">★★★★ 만족</option>
+        <option value="★★★ 보통">★★★ 보통</option>
+        <option value="★★ 불만족">★★ 불만족</option>
+        <option value="★ 매우 불만족">★ 매우 불만족</option>
+      </select>
 
-      <label for="q4">문항4. 여행 중 개선되었으면 하는 점은?</label>
-      <textarea id="q4" name="개선되었으면 하는 점" rows="3" placeholder="불편하거나 개선할 점이 있다면 알려주세요."></textarea>
+      <label for="q4">문항4. 여행 중 Guide(현지)의 만족도는 어떠셨나요?</label>
+      <select id="q4" name="가이드 만족도" required>
+        <option value="">선택</option>
+        <option value="★★★★★ 매우 만족">★★★★★ 매우 만족</option>
+        <option value="★★★★ 만족">★★★★ 만족</option>
+        <option value="★★★ 보통">★★★ 보통</option>
+        <option value="★★ 불만족">★★ 불만족</option>
+        <option value="★ 매우 불만족">★ 매우 불만족</option>
+      </select>
 
-      <label for="q5">문항5. 자유 의견을 남겨주세요. (예: 연합회에 바라는 점)</label>
-      <textarea id="q5" name="자유 의견" rows="3" placeholder="기타 남기실 말씀을 자유롭게 작성해주세요."></textarea>
+      <label for="q5">문항5. 여행 중 어떤 부분이 가장 좋으셨나요?</label>
+      <textarea id="q5" name="가장 좋았던 점" rows="3" placeholder="특별히 좋았던 부분이 있다면 적어주세요."></textarea>
+
+      <label for="q6">문항6. 여행 중 개선되었으면 하는 점은?</label>
+      <textarea id="q6" name="개선되었으면 하는 점" rows="3" placeholder="불편하거나 개선할 점이 있다면 알려주세요."></textarea>
+
+      <label for="q7">문항7. 자유 의견을 남겨주세요. (예: 연합회에 바라는 점)</label>
+      <textarea id="q7" name="자유 의견" rows="3" placeholder="기타 남기실 말씀을 자유롭게 작성해주세요."></textarea>
 
       <button type="submit">제출하기</button>
     </form>
